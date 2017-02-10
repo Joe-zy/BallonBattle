@@ -1,0 +1,318 @@
+/** 清除内外边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td
+/* table elements 表格元素 */
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea
+
+/* for ie */
+
+{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: courier new, courier, monospace;
+}
+
+
+/* 统一等宽字体 */
+
+small {
+	font-size: 12px;
+}
+
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+legend {
+	color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+	border: 0;
+}
+
+
+/* img 搭车：让链接里的 img 无边框 */
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear{
+	clear: both;
+}
+.clear_left_float:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+}
+.clear_left_float>div,
+.clear_left_float>ul,
+.clear_left_float>li,
+.clear_left_float>dl,
+.clear_left_float>dd,
+.clear_left_float>dt,
+.clear_left_float>img,
+.clear_left_float>span,
+.clear_left_float>a,
+.clear_left_float>video{
+	float: left;
+}
+
+/*头部开始*/
+
+#header {
+	height: 74px;
+	background-color: #D43B33;
+}
+
+#header .inner_box {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header .inner_box:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+}
+
+#header .logo {
+	float: left;
+}
+
+#header .menu {
+	float: right;
+	font-size: 14px;
+}
+
+#header .menu a {
+	color: #FFF;
+	font-size: 14px;
+}
+
+#header .menu>li {
+	float: left;
+	margin-right: 44px;
+	height: 74px;
+	line-height: 74px;
+	position: relative;
+}
+
+#header .current {
+	background-image: url(../img/nav_bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#header .menu li:hover {
+	background-image: url(../img/nav_bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#header .menu li:hover .sub_menu {
+	display: block;
+}
+
+#header .menu li:hover .sub_menu_2 {
+	display: block;
+}
+
+#header .sub_menu {
+	background-color: #D43B33;
+	text-align: center;
+	font-size: 14px;
+	width: 88px;
+	position: absolute;
+	top: 74px;
+	left: -15px;
+	display: none;
+}
+
+#header .sub_menu li {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #fff;
+}
+
+#header .sub_menu_2 {
+	background-color: #D43B33;
+	text-align: center;
+	font-size: 14px;
+	width: 88px;
+	position: absolute;
+	top: 74px;
+	left: -9px;
+	display: none;
+}
+
+#header .sub_menu_2 li {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #fff;
+}
+
+
+/*头部结束*/
+
+
+/*banner开始*/
+
+#banner img {
+	width: 100%;
+}
+
+
+/*banner结束*/
+/*底部开始*/
+
+#footer {
+	background-image: url(../img/bottombg.png);
+	height: 318px;
+}
+
+#footer .inner_box {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer .logo {
+	padding-top: 58px;
+	padding-left: 10px;
+	float: left;
+}
+
+#footer .inner_box ul {
+	float: left;
+	padding-top: 58px;
+	padding-left: 90px;
+}
+
+#footer .inner_box li {
+	color: #FFF;
+	line-height: 20px;
+}
+
+#footer .inner_box .first {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 26px;
+}
+
+#footer .inner_box span {
+	margin-left: 24px;
+}
+
+#footer .inner_box .last {
+	margin-top: 58px;
+	color: #969696;
+}
+
+
+/*底部结束*/
